@@ -1,3 +1,8 @@
+<?php
+
+    $doc = (isset($_GET['key']) && !empty($_GET['key'])) ? $_GET['key'] : null;
+
+?>
 <!DOCTYPE html>
 <!--
 Copyright 2012 Mozilla Foundation
@@ -29,15 +34,17 @@ See https://github.com/adobe-type-tools/cmap-resources
     <title>PDF.js viewer</title>
 
 
-    <link rel="stylesheet" href="viewer.css">
+    <link rel="stylesheet" href="libraries/css/viewer.css">
 
 
 <!-- This snippet is used in production (included from viewer.html) -->
-<link rel="resource" type="application/l10n" href="locale/locale.properties">
-<script src="build/pdf.js"></script>
+<link rel="resource" type="application/l10n" href="libraries/locale/locale.properties">
+<link rel="shortcut icon" href="images/favicons/favicon.ico">
+
+<script src="libraries/pdfjs.php"></script>
 
 
-  <script src="viewer.js"></script>  
+  <script src="libraries/viewerjs.php"></script>
 
   </head>
 

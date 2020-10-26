@@ -248,7 +248,7 @@ var WorkerMessageHandler = {
     }
 
     if (typeof ReadableStream === "undefined" || typeof Promise.allSettled === "undefined") {
-      throw new Error("The browser/environment lacks native support for critical " + "functionality used by the PDF.js library (e.g. " + "`ReadableStream` and/or `Promise.allSettled`); " + "please use an ES5-compatible build instead.");
+      throw new Error("The browser/environment lacks native support for critical " + "functionality used by the PDF.js libraries (e.g. " + "`ReadableStream` and/or `Promise.allSettled`); " + "please use an ES5-compatible build instead.");
     }
 
     var docId = docParams.docId;

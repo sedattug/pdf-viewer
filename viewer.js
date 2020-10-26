@@ -1310,7 +1310,7 @@ const PDFViewerApplication = {
     }
 
     let generatorId = "other";
-    const KNOWN_GENERATORS = ["acrobat distiller", "acrobat pdfwriter", "adobe livecycle", "adobe pdf library", "adobe photoshop", "ghostscript", "tcpdf", "cairo", "dvipdfm", "dvips", "pdftex", "pdfkit", "itext", "prince", "quarkxpress", "mac os x", "microsoft", "openoffice", "oracle", "luradocument", "pdf-xchange", "antenna house", "aspose.cells", "fpdf"];
+    const KNOWN_GENERATORS = ["acrobat distiller", "acrobat pdfwriter", "adobe livecycle", "adobe pdf libraries", "adobe photoshop", "ghostscript", "tcpdf", "cairo", "dvipdfm", "dvips", "pdftex", "pdfkit", "itext", "prince", "quarkxpress", "mac os x", "microsoft", "openoffice", "oracle", "luradocument", "pdf-xchange", "antenna house", "aspose.cells", "fpdf"];
 
     if (info.Producer) {
       const producer = info.Producer.toLowerCase();
@@ -13276,4 +13276,3 @@ _app.PDFPrintServiceFactory.instance = {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=viewer.js.map
